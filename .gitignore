@@ -1,0 +1,27 @@
+# Dependencies
+node_modules/
+
+# Runtime data
+MessageApp/temp/
+MessageApp/message/
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+
+# Environment variables
+.env
+.env.local
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor directories
+.vscode/
+.idea/
+
+# Build outputs
+dist/
+build/
