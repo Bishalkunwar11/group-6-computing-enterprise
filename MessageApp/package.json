@@ -1,13 +1,17 @@
 {
-    "name": "example",
+    "name": "todo-message-app",
     "version": "1.0.0",
-    "description": "",
+    "description": "A simple Todo / Message App with server-side file persistence, built with Node.js and Express.",
     "main": "server.js",
-    "author": "Dima",
-    "license": "",
+    "scripts": {
+        "start": "node server.js",
+        "dev": "npx nodemon server.js"
+    },
+    "author": "Group 6",
+    "license": "MIT",
     "dependencies": {
-      "body-parser": "1.19.0",
-      "express": "4.17.1"
+        "body-parser": "1.19.0",
+        "express": "4.17.1",
+        "express-rate-limit": "^7.5.0"
     }
-  }
-  
+}

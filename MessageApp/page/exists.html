@@ -3,15 +3,80 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Exists</title>
+    <title>Title Already Exists — Todo App</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        *, *::before, *::after { box-sizing: border-box; }
+
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            min-height: 100vh;
+            background: linear-gradient(135deg, #e8f5e9 0%, #c8e6c9 100%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .card {
+            background: #fff;
+            border-radius: 14px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.10);
+            padding: 48px 40px;
+            max-width: 420px;
+            width: 100%;
+            text-align: center;
+        }
+
+        .icon {
+            font-size: 3rem;
+            color: #e57373;
+            margin-bottom: 16px;
+        }
+
+        h1 {
+            color: #c62828;
+            font-size: 1.6rem;
+            margin: 0 0 10px;
+        }
+
+        p {
+            color: #555;
+            font-size: 1rem;
+            margin: 0 0 28px;
+            line-height: 1.5;
+        }
+
+        a.btn-back {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 12px 24px;
+            background-color: #4CAF50;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 8px;
+            font-size: 1rem;
+            font-weight: 600;
+            transition: background-color 0.2s, transform 0.1s;
+        }
+
+        a.btn-back:hover {
+            background-color: #43a047;
+        }
+
+        a.btn-back:active {
+            transform: scale(0.98);
+        }
+    </style>
 </head>
 <body>
-    <header><h1>Message</h1></header>
-    <main>
-        <h2>This title in use</h2>
-        <p>Please pick a different one.</p>
-        <p><a href="/">Start again.</a></p>
-    </main>
-    
+    <div class="card">
+        <div class="icon"><i class="fas fa-exclamation-circle"></i></div>
+        <h1>Title Already in Use</h1>
+        <p>A message with that title already exists on the server.<br>Please choose a different title and try again.</p>
+        <a href="/" class="btn-back"><i class="fas fa-arrow-left"></i> Go Back</a>
+    </div>
 </body>
 </html>
